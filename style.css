@@ -28,7 +28,7 @@
 /* ============================================================
    ITS3ABDO PERSONAL PROFILE — NEW LAYOUT
    Background files: media/backgrounds/desktop-bg.webp + mobile-bg.webp
-   Gallery files: media/featured/featured-01.webp ... featured-05.webp
+   Gallery files: media/featured/work-1.jpg ... featured-05.webp
    ============================================================ */
 body::before{content:"";position:fixed;inset:0;z-index:-3;pointer-events:none;background-image:linear-gradient(115deg,rgba(7,7,8,.94),rgba(10,8,9,.83) 55%,rgba(8,8,8,.94)),url("media/backgrounds/desktop-bg.webp");background-size:cover;background-position:center;background-repeat:no-repeat;transform:scale(1.02)}
 body{background:#080808}
@@ -107,12 +107,12 @@ body{background:#080808}
 .featured-photo:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(0,0,0,.72),transparent 65%),radial-gradient(circle at 70% 20%,rgba(255,84,46,.22),transparent 45%)}
 .featured-photo:hover{transform:translateY(-4px);border-color:rgba(255,84,46,.6)}
 .featured-photo span{position:absolute;left:15px;bottom:14px;font:700 9px Orbitron,sans-serif;letter-spacing:.12em;color:#fff;text-shadow:0 2px 10px #000}
-.photo-one{grid-column:span 3;grid-row:span 2;background-image:linear-gradient(135deg,rgba(41,23,19,.24),rgba(16,16,16,.30)),url("media/featured/featured-01.webp")}
-.photo-two{grid-column:span 3;background-image:linear-gradient(135deg,rgba(33,20,20,.24),rgba(16,16,16,.30)),url("media/featured/featured-02.webp")}
+.photo-one{grid-column:span 3;grid-row:span 2;background-image:linear-gradient(135deg,rgba(41,23,19,.24),rgba(16,16,16,.30)),url("media/featured/work-1.jpg")}
+.photo-two{grid-column:span 3;background-image:linear-gradient(135deg,rgba(33,20,20,.24),rgba(16,16,16,.30)),url("media/featured/work-2.jpg")}
 .photo-three,.photo-four,.photo-five{grid-column:span 2;background-image:linear-gradient(135deg,#211414,#101010)}
-.photo-three{background-image:linear-gradient(135deg,rgba(33,20,20,.24),rgba(16,16,16,.30)),url("media/featured/featured-03.webp")}
-.photo-four{background-image:linear-gradient(135deg,rgba(33,20,20,.24),rgba(16,16,16,.30)),url("media/featured/featured-04.webp")}
-.photo-five{background-image:linear-gradient(135deg,rgba(33,20,20,.24),rgba(16,16,16,.30)),url("media/featured/featured-05.webp")}
+.photo-three{background-image:linear-gradient(135deg,rgba(33,20,20,.24),rgba(16,16,16,.30)),url("media/featured/work-3.jpg")}
+.photo-four{background-image:linear-gradient(135deg,rgba(33,20,20,.24),rgba(16,16,16,.30)),url("media/featured/work-4.jpg")}
+.photo-five{background-image:linear-gradient(135deg,rgba(33,20,20,.24),rgba(16,16,16,.30)),url("media/featured/work-5.jpg")}
 .footer{background:rgba(7,7,7,.62)}
 @media(max-width:900px){.profile-section{grid-template-columns:1fr;gap:35px;min-height:auto;padding-top:75px}.profile-heading{text-align:center}.profile-intro{margin-left:auto;margin-right:auto}.social-panel{max-width:650px;width:100%;margin:auto}.about-section{grid-template-columns:1fr;gap:25px}.about-title h2{margin-bottom:0}.edit-video-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.featured-gallery{grid-template-rows:160px 160px}}
 @media(max-width:640px){body::before{background-image:linear-gradient(145deg,rgba(7,7,8,.89),rgba(10,8,9,.77) 55%,rgba(8,8,8,.91)),url("media/backgrounds/mobile-bg.webp");background-position:center top;background-size:cover}.profile-section{padding-top:65px;padding-bottom:65px;gap:28px}.profile-heading h1{font-size:clamp(45px,13vw,68px)}.profile-subtitle{font-size:8px}.profile-intro{font-size:12px}.social-panel{padding:14px}.panel-heading{font-size:7px}.social-grid{gap:7px}.social-card{min-height:57px;padding:8px;gap:8px}.social-icon{width:29px;height:29px;flex-basis:29px;font-size:8px}.social-name{font-size:7px}.about-section{padding-top:65px;padding-bottom:70px}.about-roles{grid-template-columns:1fr}.about-lead{font-size:14px}.my-work-section{padding-top:70px;padding-bottom:70px}.my-work-intro{display:block}.my-work-intro h2{font-size:48px}.work-open-button{width:100%;margin-top:23px}.work-details{padding:13px;margin-top:20px}.work-tabs{display:grid;grid-template-columns:1fr;gap:6px}.work-tab{justify-content:space-between;padding:13px}.work-panel-heading{display:block}.work-panel-heading>p{margin-top:12px}.edit-video-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.edit-video-card video{aspect-ratio:9/16}.design-copy{padding:17px}.design-copy h4{font-size:19px}.design-copy p{font-size:12px}.design-services{grid-template-columns:1fr;gap:7px}.programming-services{grid-template-columns:repeat(2,minmax(0,1fr))}.website-links a{gap:10px}.website-links a strong{font-size:8px}.featured-section{padding-top:0;padding-bottom:70px}.featured-section h2{font-size:39px}.featured-gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:180px 135px 135px;gap:8px}.photo-one{grid-column:span 2;grid-row:span 1}.photo-two,.photo-three,.photo-four,.photo-five{grid-column:span 1}.photo-two{grid-column:span 2}.featured-photo span{font-size:8px;left:10px;bottom:10px}}
@@ -121,3 +121,67 @@ body{background:#080808}
 .profile-heading{text-align:center;margin:0 auto 42px}
 .profile-intro{margin:25px auto 0}
 .social-panel{max-width:850px;margin:0 auto}
+
+
+/* Responsive refinements */
+img, video { max-width: 100%; }
+html, body { width: 100%; max-width: 100%; }
+body { overflow-x: clip; }
+.section-wrap { width: min(var(--max), calc(100% - 48px)); margin-left: auto; margin-right: auto; }
+.profile-section { width: min(var(--max), calc(100% - 48px)); }
+.social-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.social-card { min-width: 0; }
+.social-name { overflow-wrap: anywhere; }
+.featured-photo { min-width: 0; min-height: 0; }
+.edit-video-card video { max-height: 620px; }
+.work-panel-heading > p { overflow-wrap: anywhere; }
+
+@media (max-width: 640px) {
+  html { scroll-padding-top: 76px; }
+  .section-wrap, .profile-section { width: calc(100% - 28px); }
+  .topbar { min-height: 62px; padding-left: 14px; padding-right: 14px; }
+  .wordmark { font-size: 17px; }
+  .sound-toggle { min-width: 82px; padding: 9px 10px; }
+  .profile-section { padding-top: 46px; padding-bottom: 48px; }
+  .profile-heading { margin-bottom: 26px; }
+  .profile-heading h1 { overflow-wrap: anywhere; letter-spacing: -.07em; }
+  .profile-intro { max-width: 34rem; padding: 0 5px; line-height: 1.75; }
+  .social-panel { padding: 12px; }
+  .panel-heading { gap: 10px; flex-wrap: wrap; line-height: 1.7; }
+  .social-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .social-card { min-height: 54px; padding: 7px; }
+  .social-name { font-size: clamp(6px, 1.8vw, 8px); letter-spacing: .015em; }
+  .phone-card { grid-column: 1 / -1; }
+  .about-section { width: 100%; padding-left: 14px; padding-right: 14px; }
+  .about-title h2, .my-work-intro h2, .featured-section h2 { overflow-wrap: anywhere; }
+  .about-roles > div { padding-left: 31px; }
+  .about-roles strong { font-size: 9px; }
+  .about-roles p { font-size: 7px; line-height: 1.6; }
+  .my-work-section { padding-top: 58px; padding-bottom: 58px; }
+  .my-work-intro { min-width: 0; }
+  .work-open-button { min-width: 0; }
+  .work-details { padding: 10px; }
+  .work-tabs { display: flex; flex-direction: column; }
+  .work-tab { width: 100%; justify-content: space-between; font-size: 8px; }
+  .edit-video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .edit-video-card { padding: 5px; }
+  .edit-video-card video { width: 100%; aspect-ratio: 9 / 16; object-fit: contain; max-height: 420px; }
+  .website-links a { min-width: 0; }
+  .website-links a strong { min-width: 0; overflow-wrap: anywhere; }
+  .programming-services { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .featured-section { padding-top: 10px; }
+  .featured-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: 170px 130px 130px; }
+  .footer { gap: 12px; flex-wrap: wrap; }
+  .ambient, .grain { display: none; }
+  body::before { position: absolute; transform: none; background-attachment: scroll; }
+  .intro:before, .intro:after { animation: none; }
+  .work-details, .social-panel, .topbar, .mobile-nav { backdrop-filter: none; }
+  * { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+}
+@media (max-width: 360px) {
+  .section-wrap, .profile-section { width: calc(100% - 22px); }
+  .social-icon { width: 26px; height: 26px; flex-basis: 26px; }
+  .social-card { gap: 6px; }
+  .social-name { font-size: 6px; }
+  .featured-gallery { grid-template-rows: 145px 112px 112px; }
+}

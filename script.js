@@ -1,11 +1,3 @@
-// ============================================================
-// ITS3ABDO PORTFOLIO — EDIT THESE SETTINGS
-// 1) Add your song to media/music.mp3 (or change AUDIO_FILE).
-// 2) Replace social links + public phone number in index.html.
-// 3) Add five MP4 videos to media/edits/ (edit-01.mp4 ... edit-05.mp4).
-// 4) Add five gallery images to media/featured/ (featured-01.webp ...).
-// 5) Add different desktop/mobile backgrounds in media/backgrounds/.
-// ============================================================
 const intro = document.getElementById("intro");
 const site = document.getElementById("site");
 const enterButton = document.getElementById("enterButton");
@@ -19,7 +11,7 @@ const workOpenButton = document.getElementById("workOpenButton");
 const workDetails = document.getElementById("workDetails");
 
 // Example: "media/music.mp3" — leave empty until you add your song.
-const AUDIO_FILE = "";
+const AUDIO_FILE = "media/music.mp3";
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
